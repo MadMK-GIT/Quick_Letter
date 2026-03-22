@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job Request Application (Informal)</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./job_request_informal.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Job Request Application (Informal)</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Interest in Job Opportunity</p><br>
+    <p>Hi [Name],</p><br>
+    <div class="body-text"><p>I came across the job opening at your company and I just had to reach out! I'm a final year ECE student and honestly, your company has always been on my radar — the kind of work you do really excites me.<br><br>I know I'm a fresher, but I'm a fast learner and I'm genuinely passionate about this field. I've already worked on some cool projects and I'm always looking to push myself further.<br><br>I've attached my resume. I'd love the chance to have a quick chat. Looking forward to hearing from you!</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Thanks!</p><br>
+    <p>_(Your Name)</p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+</script>
+</body>
+</html>

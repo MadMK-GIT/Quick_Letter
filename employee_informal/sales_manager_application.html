@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Application for the Role of Sales Manager</title>
+<link rel="stylesheet" href="../shared.css">
+<script>
+function getInput(){
+    localStorage.setItem("from", document.getElementById("from").value);
+    localStorage.setItem("to", document.getElementById("to").value);
+}
+</script>
+</head>
+<body>
+<div class="back-bar">
+    <a href="../inform_list_employee.html" class="back-btn">← Back</a>
+</div>
+<h1>Application for the Role of Sales Manager</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <textarea id="from" rows="4" placeholder="Your Name&#10;Address&#10;Contact"></textarea>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <textarea id="to" rows="3" placeholder="Recipient Name&#10;Organization&#10;Address"></textarea>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Application for the Role of Sales Manager</p><br>
+    <p>Hi [Manager's Name],</p><br>
+    <div class="body-text"><p>I wanted to reach out personally regarding the Sales Manager opening. I've been following your company's growth and I genuinely believe I can bring real value to your team.<br><br>I have a solid track record in sales — consistently hitting and exceeding targets — and I'm great at building relationships with clients. I'm someone who gets things done without needing to be micromanaged, and I enjoy mentoring junior team members.<br><br>I've attached my resume. Would love to grab a coffee or a quick call if you're open to it. Looking forward to hearing from you!</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Cheers,</p><br>
+    <p>_(Your Name)</p>
+    <a href="./sales_manager_result.html" onclick="getInput()">
+        <button class="submit-btn">Submit</button>
+    </a>
+</div>
+</body>
+</html>

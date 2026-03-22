@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apology Letter to Boss</title>
+<link rel="stylesheet" href="../shared.css">
+<script>
+function getInput(){
+    localStorage.setItem("from", document.getElementById("from").value);
+    localStorage.setItem("to", document.getElementById("to").value);
+}
+</script>
+</head>
+<body>
+<div class="back-bar">
+    <a href="../inform_list_employee.html" class="back-btn">← Back</a>
+</div>
+<h1>Apology Letter to Boss</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <textarea id="from" rows="4" placeholder="Your Name&#10;Address&#10;Contact"></textarea>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <textarea id="to" rows="3" placeholder="Recipient Name&#10;Organization&#10;Address"></textarea>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Apology for [Reason]</p><br>
+    <p>Dear [Boss's Name],</p><br>
+    <div class="body-text"><p>I wanted to reach out and sincerely apologize for [briefly describe the mistake — e.g., missing the deadline / the error in the report / my behaviour in the meeting]. I completely understand how this may have impacted the team and I take full responsibility for it.<br><br>It was not my intention to cause any inconvenience or disruption. I should have been more careful and I genuinely regret that I wasn't. I have already taken steps to [mention corrective action — e.g., fix the error / ensure this doesn't happen again / complete the pending task].<br><br>I value your trust and the opportunities you've given me, and I assure you this will not happen again. Thank you for your patience and understanding.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Sincerely,</p><br>
+    <p>_(Your Name)</p>
+    <a href="./apology_result.html" onclick="getInput()">
+        <button class="submit-btn">Submit</button>
+    </a>
+</div>
+</body>
+</html>

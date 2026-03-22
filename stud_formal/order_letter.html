@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order Letter</title>
+<link rel="stylesheet" href="../shared.css">
+<script>
+function getInput(){
+    localStorage.setItem("from", document.getElementById("from").value);
+    localStorage.setItem("to", document.getElementById("to").value);
+}
+</script>
+</head>
+<body>
+<div class="back-bar">
+    <a href="../formal_student_list.html" class="back-btn">← Back</a>
+</div>
+<h1>Order Letter</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <textarea id="from" rows="4" placeholder="Your Name&#10;Address&#10;Contact"></textarea>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            <p><strong>The Teacher,</strong></p>
+            <textarea id="to" rows="3" placeholder="Recipient Name&#10;Organization&#10;Address"></textarea>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Order for 200 Copies of Science</p><br>
+    <p>Respected Sir/Madam,</p><br>
+    <div class="body-text"><p>As per our discussions on ___(meeting date), we are happy to place an order for 200 copies of the Science book by ____(writer) for Class IX for the ICSE Board on the following terms and conditions:<br><br>1. The price of each book will be Rs ___ (inclusive of all taxes)<br>2. Shipment will be made within 7 days from the order date.<br>3. Order not delivered as per the above conditions, the order stands cancelled.<br><br>Please find attached cheque number ____ dated ___ for Rs ____ towards advance for the order.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>With Regards,</p><br>
+    <p>_(Your Name)</p>
+    <a href="./order_result.html" onclick="getInput()">
+        <button class="submit-btn">Submit</button>
+    </a>
+</div>
+</body>
+</html>

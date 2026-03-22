@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Request to Work from Home</title>
+<link rel="stylesheet" href="../shared.css">
+<script>
+function getInput(){
+    localStorage.setItem("from", document.getElementById("from").value);
+    localStorage.setItem("to", document.getElementById("to").value);
+}
+</script>
+</head>
+<body>
+<div class="back-bar">
+    <a href="../inform_list_employee.html" class="back-btn">← Back</a>
+</div>
+<h1>Request to Work from Home</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <textarea id="from" rows="4" placeholder="Your Name&#10;Address&#10;Contact"></textarea>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <textarea id="to" rows="3" placeholder="Recipient Name&#10;Organization&#10;Address"></textarea>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Request to Work from Home</p><br>
+    <p>Hi [Manager's Name],</p><br>
+    <div class="body-text"><p>Hope you're doing well! I wanted to check in about the possibility of working from home for a few days this week/month. I've been dealing with [brief reason — e.g., a minor health issue / family situation / connectivity concerns at the commute location] and I think it'd be easier for me to stay productive from home during this time.<br><br>I'll make sure I'm fully available during working hours, attend all calls and meetings, and meet all my deadlines as usual. I don't foresee any impact on my work output.<br><br>Let me know if that works for you. Happy to discuss if needed. Thanks a lot!</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Thanks,</p><br>
+    <p>_(Your Name)</p>
+    <a href="./work_from_home_result.html" onclick="getInput()">
+        <button class="submit-btn">Submit</button>
+    </a>
+</div>
+</body>
+</html>

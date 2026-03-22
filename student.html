@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.center {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
+    min-height: 100vh;
+}
+body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 0;
+}
+button {
+    background-color: white;
+    border: none;
+    color: #000;
+    padding: 20px 40px;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+p {
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #00d4ff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+button:hover {
+    transform: scale(1.15);
+    background-color: #00d4ff;
+    color: white;
+    box-shadow: 0 6px 20px rgba(0,212,255,0.5);
+}
+a { text-decoration: none; }
+.back { position: fixed; top: 20px; left: 20px; z-index: 2; }
+.back a {
+    color: white; text-decoration: none; background: rgba(255,255,255,0.15);
+    padding: 8px 16px; border-radius: 8px; font-size: 14px;
+    backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.2s;
+}
+.back a:hover { background: rgba(255,255,255,0.25); }
+</style>
+<title>Student - Quick Letter</title>
+</head>
+<body>
+    <div class="back"><a href="./index.html">← Back</a></div>
+    <div class="center">
+        <p style="font-size:55px; margin-bottom: 40px;">WHAT YOU<br><strong>NEED??</strong></p>
+        <div>
+            <a href="./formal_student_list.html"><button><strong>FORMAL</strong></button></a>
+            <a href="./inform_list_student.html"><button><strong>IN-FORMAL</strong></button></a>
+        </div>
+    </div>
+</body>
+</html>

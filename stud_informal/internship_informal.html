@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Requesting for Internship (Informal)</title>
+<link rel="stylesheet" href="../shared.css">
+<script>
+function getInput(){
+    localStorage.setItem("from", document.getElementById("from").value);
+    localStorage.setItem("to", document.getElementById("to").value);
+}
+</script>
+</head>
+<body>
+<div class="back-bar">
+    <a href="../inform_list_student.html" class="back-btn">← Back</a>
+</div>
+<h1>Requesting for Internship (Informal)</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <textarea id="from" rows="4" placeholder="Your Name&#10;Address&#10;Contact"></textarea>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <textarea id="to" rows="3" placeholder="Recipient Name&#10;Organization&#10;Address"></textarea>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Internship Request</p><br>
+    <p>Hi [Name],</p><br>
+    <div class="body-text"><p>I hope this finds you well! I'm a final year engineering student and I'm on the lookout for an internship that'll actually teach me something meaningful — and your company came to mind immediately.<br><br>I've been working on some projects on my own (a Java app, a web project) and I really enjoy building things and problem-solving. I'm not looking for a certificate — I genuinely want to learn and contribute.<br><br>I know you might be busy, but even a 10-minute call would mean a lot to me. I've attached my resume in case you'd like to take a quick look. No pressure at all — just thought it was worth reaching out!</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Thanks so much,</p><br>
+    <p>_(Your Name)</p>
+    <a href="./internship_informal_result.html" onclick="getInput()">
+        <button class="submit-btn">Submit</button>
+    </a>
+</div>
+</body>
+</html>

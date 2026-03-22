@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+body {
+    background: linear-gradient(135deg, #2c1810 0%, #5c3317 30%, #8b5e3c 60%, #3d2408 100%);
+    background-size: cover;
+    min-height: 100vh;
+}
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 0;
+}
+.center { z-index: 1; }
+button {
+    background-color: white;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+p {
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #c8a951;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+button:hover {
+    transform: scale(1.15);
+    background-color: #c8a951;
+    color: white;
+    box-shadow: 0 6px 20px rgba(200,169,81,0.5);
+}
+a { text-decoration: none; }
+</style>
+<title>Quick Letter - Home</title>
+</head>
+<body>
+    <div class="center">
+        <p style="font-size:55px; margin-bottom: 40px;">WHAT IS YOUR<br><strong>PROFESSION??</strong></p>
+        <div>
+            <a href="./student.html"><button><strong>STUDENT</strong></button></a>
+            <a href="./employee.html"><button><strong>EMPLOYEE</strong></button></a>
+        </div>
+    </div>
+</body>
+</html>

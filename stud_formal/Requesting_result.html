@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Requesting Letter</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./Requesting_letter.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Requesting Letter</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            <p><strong>The Principal,</strong></p>
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Request to Take Part in Culturals</p><br>
+    <p>Respected Sir/Madam,</p><br>
+    <div class="body-text"><p>It gives me immense pleasure to announce that our college is celebrating its anniversary this year. We intend to organize a Cultural Fest on __(date) from __(time) in our college auditorium. The Fest provides a platform for students to showcase their talents in Dance, classical music, singing, fashion show, play, and stand up comedy.<br><br>I am writing to request your honourable presence along with your staff in gracing the event. It will be our pleasure to have you as a part of the celebration. Earnestly waiting for a favourable response.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Yours faithfully,</p><br>
+    <p>_(Your Name)</p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+</script>
+</body>
+</html>

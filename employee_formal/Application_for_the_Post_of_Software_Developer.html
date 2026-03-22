@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Application for the Post of Software Developer</title>
+<link rel="stylesheet" href="../shared.css">
+<script>
+function getInput(){
+    localStorage.setItem("from", document.getElementById("from").value);
+    localStorage.setItem("to", document.getElementById("to").value);
+}
+</script>
+</head>
+<body>
+<div class="back-bar">
+    <a href="../formal_employee_list.html" class="back-btn">← Back</a>
+</div>
+<h1>Application for the Post of Software Developer</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <textarea id="from" rows="4" placeholder="Your Name&#10;Address&#10;Contact"></textarea>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <textarea id="to" rows="3" placeholder="Recipient Name&#10;Organization&#10;Address"></textarea>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Application for the Post of Software Developer</p><br>
+    <p>Respected Sir/Madam,</p><br>
+    <div class="body-text"><p>This is regarding your post on {Portal} about a vacancy in your company for the role of Software Developer. Please accept my application for the same.<br><br>Here is a brief about myself. I have completed B.E. in Electronics and Communication Engineering from Hindusthan Institute of Technology with a CGPA of 8.21. I am proficient in Core Java, OOP, Collections Framework, SQL, HTML5, and CSS3.<br><br>I have completed a Udemy certification in Java Programming covering Core Java, OOP, Collections, Exception Handling, Multithreading, and JDBC. I have also built projects including a Student Management System in Java and a web-based letter formatting application.<br><br>I am confident that I have the skills to excel at your dynamic organisation. I request you to give me an opportunity to learn and grow at your esteemed firm through this job role. Please refer to my resume attached for detailed information.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Yours faithfully,</p><br>
+    <p>_(Your Name)</p>
+    <a href="./Application_SD_result.html" onclick="getInput()">
+        <button class="submit-btn">Submit</button>
+    </a>
+</div>
+</body>
+</html>

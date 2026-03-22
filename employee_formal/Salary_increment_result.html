@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Salary Increment Letter</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./Salary_increment_letter.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Salary Increment Letter</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Requesting to Increase My Salary Package</p><br>
+    <p>Respected Sir/Madam,</p><br>
+    <div class="body-text"><p>I am writing to formally request a revision of my current salary package. Along with my experience, my responsibilities have also increased significantly and I am now also covering additional duties. This, of course, requires more effort, skill, and time.<br><br>I have consistently performed my duties diligently and have contributed positively to the team. I request you to consider increasing my salary so that I can continue to work harder and you can expect even better results from me. I trust you will give my request your due consideration.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Yours sincerely,</p><br>
+    <p>_(Your Name)</p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+</script>
+</body>
+</html>

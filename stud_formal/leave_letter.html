@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Leave Letter</title>
+<link rel="stylesheet" href="../shared.css">
+<script>
+function getInput(){
+    localStorage.setItem("from", document.getElementById("from").value);
+    localStorage.setItem("to", document.getElementById("to").value);
+    localStorage.setItem("name", document.getElementById("name").value);
+    localStorage.setItem("reason", document.getElementById("reason").value);
+    localStorage.setItem("days", document.getElementById("days").value);
+}
+</script>
+</head>
+<body>
+<div class="back-bar">
+    <a href="../formal_student_list.html" class="back-btn">← Back</a>
+</div>
+<h1>Leave Letter</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <textarea id="from" rows="4" placeholder="Your Name&#10;Class / Roll No.&#10;Institution Name&#10;Address"></textarea>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            <p><strong>The Principal,</strong></p>
+            <textarea id="to" rows="3" placeholder="Institution Name&#10;Address"></textarea>
+        </div>
+    </div>
+
+    <p><strong>Subject:</strong> One Day Leave Application</p><br>
+    <p>Respected Sir/Madam,</p><br>
+    <div class="body-text">
+        <p>As I'm <input type="text" id="reason" class="inline-input" placeholder="reason for leave" required>,
+        I was unable to attend the class. So, please grant me leave for
+        <input type="text" id="days" class="inline-input" placeholder="no. of days" required> day(s).</p>
+    </div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Yours faithfully,</p><br>
+    <input type="text" id="name" class="inline-input" placeholder="Your Name" required>
+
+    <a href="./leave_result.html" onclick="getInput()">
+        <button class="submit-btn">Submit</button>
+    </a>
+</div>
+</body>
+</html>

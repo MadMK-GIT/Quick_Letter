@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Requesting Internship Application</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./Requesting_internship_Application.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Requesting Internship Application</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Requesting Internship Application</p><br>
+    <p>Respected Sir/Madam,</p><br>
+    <div class="body-text"><p>I am writing to apply for the internship at __(company name). I am a student at Hindusthan Institute of Technology with a major in Electronics and Communication Engineering and I believe I would be a good fit for the role.<br><br>Your company's mission resonates with my thought process and I am looking forward to learning under your mentorship. I recently participated in a tech hackathon where I demonstrated quick decision-making, problem-solving, and teamwork under a tight deadline.<br><br>I have led my team in various projects and believe in smart work and continuous growth. I feel that I could gain more relevant exposure and industry experience with your organisation.<br><br>Awaiting the opportunity to speak with you.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Yours faithfully,</p><br>
+    <p>_(Your Name)</p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+</script>
+</body>
+</html>

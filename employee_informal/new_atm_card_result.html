@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Request to Issue New ATM Card</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./new_atm_card.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Request to Issue New ATM Card</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Request for Issuance of New ATM Card</p><br>
+    <p>Dear Sir/Madam,</p><br>
+    <div class="body-text"><p>I am writing to request the issuance of a new ATM card for my savings account. My current ATM card has been [lost / damaged / expired] and I am unable to use it for transactions.<br><br>My account details are as follows:<br>Account Holder Name: _(Your Name)<br>Account Number: _(Account Number)<br>Registered Mobile Number: _(Mobile Number)<br><br>I kindly request you to block the existing card (if applicable) and issue a new one at the earliest. Please let me know if any additional documentation is required.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Yours faithfully,</p><br>
+    <p>_(Your Name)</p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+</script>
+</body>
+</html>

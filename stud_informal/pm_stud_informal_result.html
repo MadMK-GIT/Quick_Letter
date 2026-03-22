@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Post of PM (Student - Informal)</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./post_of_pm_informal.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Post of PM (Student - Informal)</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Interest in Project Manager / Lead Role</p><br>
+    <p>Hey [Name],</p><br>
+    <div class="body-text"><p>I heard there's a student lead / project manager role coming up and I'd really love to be considered for it!<br><br>I know I'm still a student, but I feel like I have a good sense of how to get people on the same page and keep things moving. I've helped organize events and group projects before and I genuinely enjoy that kind of coordination work.<br><br>I promise I'd take it seriously and give it my best shot. Would love to chat more if you're open to it. Thanks for reading this!</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>With enthusiasm,</p><br>
+    <p>_(Your Name)</p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+</script>
+</body>
+</html>

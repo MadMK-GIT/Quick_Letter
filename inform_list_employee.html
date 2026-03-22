@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Informal Employee Letters</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: linear-gradient(135deg, #0d1b0d 0%, #1a3a1a 40%, #0f4c0f 100%);
+    min-height: 100vh;
+}
+body::before {
+    content: ''; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.35); z-index: 0;
+}
+h1 {
+    text-align: center; color: white; font-size: 2.5rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    animation: floating 3s ease-in-out infinite;
+    position: relative; z-index: 1;
+    padding: 30px 0 10px; letter-spacing: 3px;
+}
+@keyframes floating {
+    from { transform: translate(0, 0px); }
+    65%  { transform: translate(0, 12px); }
+    to   { transform: translate(0, 0px); }
+}
+.centre { position: relative; z-index: 1; width: 480px; margin: 30px auto 0; }
+a { text-decoration: none; color: black; }
+button {
+    background-color: rgb(113, 215, 237);
+    border: none; color: #000; padding: 18px 20px;
+    text-align: center; margin-bottom: 14px; font-size: 20px;
+    width: 100%; border-radius: 12px;
+    font-family: 'Times New Roman', Times, serif; font-weight: bold;
+    transition: all 0.25s; box-shadow: 0 4px 12px rgba(0,0,0,0.25); cursor: pointer;
+}
+button:hover { transform: scale(1.06); background-color: #00ff88; box-shadow: 0 6px 20px rgba(0,255,136,0.4); }
+.back { position: fixed; top: 20px; left: 20px; z-index: 2; }
+.back a {
+    color: white; text-decoration: none; background: rgba(255,255,255,0.15);
+    padding: 8px 16px; border-radius: 8px; font-size: 14px;
+    border: 1px solid rgba(255,255,255,0.2); transition: all 0.2s;
+}
+.back a:hover { background: rgba(255,255,255,0.3); }
+</style>
+</head>
+<body>
+<div class="back"><a href="./employee.html">← Back</a></div>
+<h1>IN-FORMAL</h1>
+<div class="centre">
+    <a href="./employee_informal/sales_manager_application.html"><button>Application for Role of Sales Manager</button></a>
+    <a href="./employee_informal/work_from_home.html"><button>Request to Work from Home</button></a>
+    <a href="./employee_informal/new_atm_card.html"><button>Request Issue New ATM Card</button></a>
+    <a href="./employee_informal/apology_letter_boss.html"><button>Apology Letter to Boss</button></a>
+    <a href="./employee_informal/post_of_pm_informal.html"><button>Post of PM</button></a>
+</div>
+</body>
+</html>

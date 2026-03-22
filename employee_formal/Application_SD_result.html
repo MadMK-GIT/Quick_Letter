@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Application for the Post of Software Developer</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./Application_for_the_Post_of_Software_Developer.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Application for the Post of Software Developer</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Application for the Post of Software Developer</p><br>
+    <p>Respected Sir/Madam,</p><br>
+    <div class="body-text"><p>This is regarding your post on {Portal} about a vacancy in your company for the role of Software Developer. Please accept my application for the same.<br><br>I have completed B.E. in Electronics and Communication Engineering from Hindusthan Institute of Technology with a CGPA of 8.21. I am proficient in Core Java, OOP, Collections Framework, SQL, HTML5, and CSS3.<br><br>I have completed a Udemy certification in Java Programming covering Core Java, OOP, Collections, Exception Handling, Multithreading, and JDBC. I have also built projects including a Student Management System in Java and a web-based letter formatting application.<br><br>I am confident that I have the skills to excel at your dynamic organisation. I request you to give me an opportunity to learn and grow at your esteemed firm. Please refer to my resume attached for detailed information.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Yours faithfully,</p><br>
+    <p>_(Your Name)</p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+</script>
+</body>
+</html>

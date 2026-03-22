@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Requesting for Internship (Informal)</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./internship_informal.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Requesting for Internship (Informal)</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Internship Request</p><br>
+    <p>Hi [Name],</p><br>
+    <div class="body-text"><p>I hope this finds you well! I'm a final year engineering student and I'm on the lookout for an internship that'll actually teach me something meaningful — and your company came to mind immediately.<br><br>I've been working on some projects on my own and I really enjoy building things and problem-solving. I'm not looking for just a certificate — I genuinely want to learn and contribute.<br><br>I've attached my resume in case you'd like to take a quick look. No pressure at all — just thought it was worth reaching out!</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Thanks so much,</p><br>
+    <p>_(Your Name)</p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Enquiry Letter</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./Enquiry_Letter.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Enquiry Letter</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            <p><strong>The Principal,</strong></p>
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Enquiry Regarding English Speaking Courses</p><br>
+    <p>Respected Sir/Madam,</p><br>
+    <div class="body-text"><p>I am writing to enquire about English speaking courses at your institute. I would be grateful if you could send me further details regarding courses in (month). I would like to know the starting dates, duration, details about different types of courses and how much they cost. I would also like to know the strength of each batch.<br><br>In addition, I would like to have further information about the availability of accommodation close to your institute. I would be grateful if you could give me a prompt response so that I can take a timely decision to join your institute.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Yours faithfully,</p><br>
+    <p>_(Your Name)</p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+</script>
+</body>
+</html>

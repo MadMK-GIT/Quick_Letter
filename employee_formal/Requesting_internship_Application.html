@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Requesting Internship Application</title>
+<link rel="stylesheet" href="../shared.css">
+<script>
+function getInput(){
+    localStorage.setItem("from", document.getElementById("from").value);
+    localStorage.setItem("to", document.getElementById("to").value);
+}
+</script>
+</head>
+<body>
+<div class="back-bar">
+    <a href="../formal_employee_list.html" class="back-btn">← Back</a>
+</div>
+<h1>Requesting Internship Application</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <textarea id="from" rows="4" placeholder="Your Name&#10;Address&#10;Contact"></textarea>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <textarea id="to" rows="3" placeholder="Recipient Name&#10;Organization&#10;Address"></textarea>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Requesting Internship Application</p><br>
+    <p>Respected Sir/Madam,</p><br>
+    <div class="body-text"><p>I am writing to apply for the internship at __(company name). I am a student at Hindusthan Institute of Technology with a major in Electronics and Communication Engineering and I believe I would be a good fit for the role.<br><br>Your company's mission resonates with my thought process and I am looking forward to learning under your mentorship. I recently participated in a tech hackathon where I demonstrated quick decision-making, problem-solving, and teamwork under a tight deadline.<br><br>I have led my team in various projects and believe in smart work and continuous growth. I feel that I could gain more relevant exposure and industry experience with your organisation.<br><br>Awaiting the opportunity to speak with you.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Yours faithfully,</p><br>
+    <p>_(Your Name)</p>
+    <a href="./Internship_result.html" onclick="getInput()">
+        <button class="submit-btn">Submit</button>
+    </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Complaint Letter about Food</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./complaint_letter.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Complaint Letter about Food</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            <p><strong>The Principal,</strong></p>
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Complaint Regarding Food Quality</p><br>
+    <p>Respected Sir/Madam,</p><br>
+    <div class="body-text"><p>I am writing to complain about a meal we had in our canteen yesterday. We had ordered food but had to wait for more than 20 minutes to get it. From a menu of 12 dishes, only a few were available and their quality was poor.<br><br>We have eaten in our canteen several times in the past but this is the first time we have received such bad treatment. I am not asking for a refund but I would like you to improve the quality of your dishes and service.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Yours faithfully,</p><br>
+    <p>_(Your Name)</p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+</script>
+</body>
+</html>

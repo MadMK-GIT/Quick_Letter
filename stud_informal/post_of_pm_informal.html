@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Post of PM (Student - Informal)</title>
+<link rel="stylesheet" href="../shared.css">
+<script>
+function getInput(){
+    localStorage.setItem("from", document.getElementById("from").value);
+    localStorage.setItem("to", document.getElementById("to").value);
+}
+</script>
+</head>
+<body>
+<div class="back-bar">
+    <a href="../inform_list_student.html" class="back-btn">← Back</a>
+</div>
+<h1>Post of PM (Student - Informal)</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <textarea id="from" rows="4" placeholder="Your Name&#10;Address&#10;Contact"></textarea>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <textarea id="to" rows="3" placeholder="Recipient Name&#10;Organization&#10;Address"></textarea>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Interest in Project Manager / Lead Role</p><br>
+    <p>Hey [Name],</p><br>
+    <div class="body-text"><p>I heard there's a student lead / project manager role coming up for the upcoming college event or project — and I'd really love to be considered for it!<br><br>I know I'm still a student, but I feel like I have a good sense of how to get people on the same page and keep things moving. I've helped organize [mention something — a college event / group project / club activity] before and I genuinely enjoy that kind of coordination work.<br><br>I promise I'd take it seriously and give it my best shot. Would love to chat more if you're open to it. Thanks for reading this!</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>With enthusiasm,</p><br>
+    <p>_(Your Name)</p>
+    <a href="./pm_stud_informal_result.html" onclick="getInput()">
+        <button class="submit-btn">Submit</button>
+    </a>
+</div>
+</body>
+</html>

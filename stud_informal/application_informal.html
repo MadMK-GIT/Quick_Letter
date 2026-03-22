@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Application Letter (Informal)</title>
+<link rel="stylesheet" href="../shared.css">
+<script>
+function getInput(){
+    localStorage.setItem("from", document.getElementById("from").value);
+    localStorage.setItem("to", document.getElementById("to").value);
+}
+</script>
+</head>
+<body>
+<div class="back-bar">
+    <a href="../inform_list_student.html" class="back-btn">← Back</a>
+</div>
+<h1>Application Letter (Informal)</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <textarea id="from" rows="4" placeholder="Your Name&#10;Address&#10;Contact"></textarea>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <textarea id="to" rows="3" placeholder="Recipient Name&#10;Organization&#10;Address"></textarea>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Application for [Position/Program]</p><br>
+    <p>Hey [Name],</p><br>
+    <div class="body-text"><p>I wanted to drop you a quick note about my application for [position/program name]. I know the formal application is already in, but I just wanted to personally say how excited I am about this opportunity.<br><br>I really feel like this is a perfect fit for where I am right now — I have the skills, the attitude, and most importantly the drive to make the most of it. I don't want to just talk the talk; I genuinely want to contribute and grow.<br><br>If there's any additional information you need from me or if you'd like a quick chat, I'm more than happy to make time. Thanks so much for considering my application!</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Warmly,</p><br>
+    <p>_(Your Name)</p>
+    <a href="./application_informal_result.html" onclick="getInput()">
+        <button class="submit-btn">Submit</button>
+    </a>
+</div>
+</body>
+</html>

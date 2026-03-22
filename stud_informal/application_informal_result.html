@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Application Letter (Informal)</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./application_informal.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Application Letter (Informal)</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Application for [Position/Program]</p><br>
+    <p>Hey [Name],</p><br>
+    <div class="body-text"><p>I wanted to drop you a quick note about my application for [position/program name]. I know the formal application is already in, but I just wanted to personally say how excited I am about this opportunity.<br><br>I really feel like this is a perfect fit — I have the skills, the attitude, and the drive to make the most of it. If there's any additional information you need or if you'd like a quick chat, I'm more than happy to make time. Thanks so much for considering my application!</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Warmly,</p><br>
+    <p>_(Your Name)</p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+</script>
+</body>
+</html>

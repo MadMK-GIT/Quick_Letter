@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Letter for a Friend</title>
+<link rel="stylesheet" href="../shared.css">
+<script>
+function getInput(){
+    localStorage.setItem("from", document.getElementById("from").value);
+    localStorage.setItem("to", document.getElementById("to").value);
+}
+</script>
+</head>
+<body>
+<div class="back-bar">
+    <a href="../inform_list_student.html" class="back-btn">← Back</a>
+</div>
+<h1>Letter for a Friend</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <textarea id="from" rows="4" placeholder="Your Name&#10;Address&#10;Contact"></textarea>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <textarea id="to" rows="3" placeholder="Recipient Name&#10;Organization&#10;Address"></textarea>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> How Are You? Catching Up!</p><br>
+    <p>Hey [Friend's Name],</p><br>
+    <div class="body-text"><p>Hope you're doing awesome! It feels like ages since we last properly caught up and I just thought I'd write to you the old-fashioned way — feels more personal, right?<br><br>Things here have been going pretty well! [Share something fun — e.g., I've been getting into cycling lately / I just finished a really good book / college has been hectic but fun]. How about you? Are you still into [mention something your friend likes]?<br><br>I really miss hanging out with you. Remember that time we [mention a fun memory]? Those were the days! We need to plan something soon — maybe we can meet up during the holidays?<br><br>Write back soon, or just call me! Would love to hear your voice.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Your friend,</p><br>
+    <p>_(Your Name)</p>
+    <a href="./friend_result.html" onclick="getInput()">
+        <button class="submit-btn">Submit</button>
+    </a>
+</div>
+</body>
+</html>

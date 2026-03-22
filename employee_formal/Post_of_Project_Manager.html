@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Application for the Post of Project Manager</title>
+<link rel="stylesheet" href="../shared.css">
+<script>
+function getInput(){
+    localStorage.setItem("from", document.getElementById("from").value);
+    localStorage.setItem("to", document.getElementById("to").value);
+}
+</script>
+</head>
+<body>
+<div class="back-bar">
+    <a href="../formal_employee_list.html" class="back-btn">← Back</a>
+</div>
+<h1>Application for the Post of Project Manager</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <textarea id="from" rows="4" placeholder="Your Name&#10;Address&#10;Contact"></textarea>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <textarea id="to" rows="3" placeholder="Recipient Name&#10;Organization&#10;Address"></textarea>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Application for the Post of Project Manager</p><br>
+    <p>Respected Sir/Madam,</p><br>
+    <div class="body-text"><p>I am writing to express my keen interest in the Project Manager position at your esteemed organisation. With a strong background in leading cross-functional teams, managing project timelines, and delivering results within budget constraints, I am confident that I am the right candidate for this role.<br><br>Over the course of my career, I have successfully managed multiple projects simultaneously, coordinating between development, design, and business stakeholder teams. I am proficient in Agile and Scrum methodologies and have a proven track record of delivering projects on time and within scope.<br><br>I am particularly drawn to your organisation's culture of innovation and excellence, and I am excited about the prospect of contributing to your continued growth. I have attached my resume for your reference and would welcome the opportunity to discuss how my experience aligns with your requirements.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Yours sincerely,</p><br>
+    <p>_(Your Name)</p>
+    <a href="./PM_result.html" onclick="getInput()">
+        <button class="submit-btn">Submit</button>
+    </a>
+</div>
+</body>
+</html>

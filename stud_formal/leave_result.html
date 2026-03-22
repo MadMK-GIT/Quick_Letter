@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Leave Letter</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./leave_letter.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Leave Letter</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            <p><strong>The Principal,</strong></p>
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+
+    <p><strong>Subject:</strong> One Day Leave Application</p><br>
+    <p>Respected Sir/Madam,</p><br>
+    <div class="body-text">
+        <p>As I'm <strong><span id="reason"></span></strong>, I was unable to attend the class.
+        So, please grant me leave for <strong><span id="days"></span></strong> day(s).</p>
+    </div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Yours faithfully,</p><br>
+    <p><strong><span id="name"></span></strong></p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+    document.getElementById("name").innerText = localStorage.getItem("name") || "";
+    document.getElementById("reason").innerText = localStorage.getItem("reason") || "";
+    document.getElementById("days").innerText = localStorage.getItem("days") || "";
+</script>
+</body>
+</html>

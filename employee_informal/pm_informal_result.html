@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Post of PM (Informal)</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./post_of_pm_informal.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Post of PM (Informal)</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Expressing Interest in the Project Manager Role</p><br>
+    <p>Hey [Name],</p><br>
+    <div class="body-text"><p>I heard there might be an opening for a PM role and honestly, I'd love to throw my hat in the ring! I've been really enjoying my work here and I feel like I'm ready to take on more leadership.<br><br>I've been informally leading a few initiatives already — coordinating timelines, aligning the team, and making sure things don't fall through the cracks. People tell me I'm easy to work with and I'm good at keeping things organized without being too rigid about it.<br><br>I'd love to chat more about it if you're open to it. No pressure at all — just wanted to put it out there.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Thanks a lot,</p><br>
+    <p>_(Your Name)</p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+</script>
+</body>
+</html>

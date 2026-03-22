@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Letter for a Friend</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./letter_for_friend.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Letter for a Friend</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> How Are You? Catching Up!</p><br>
+    <p>Hey [Friend's Name],</p><br>
+    <div class="body-text"><p>Hope you're doing awesome! It feels like ages since we last properly caught up and I just thought I'd write to you the old-fashioned way — feels more personal, right?<br><br>Things here have been going pretty well! I've been keeping busy with studies and a few personal projects. How about you?<br><br>I really miss hanging out with you. We need to plan something soon — maybe we can meet up during the holidays?<br><br>Write back soon, or just call me! Would love to hear your voice.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>Your friend,</p><br>
+    <p>_(Your Name)</p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+</script>
+</body>
+</html>

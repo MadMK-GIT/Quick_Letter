@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order Letter</title>
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<div class="back-bar">
+    <a href="./order_letter.html" class="back-btn">← Edit</a>
+    <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+<h1>Order Letter</h1>
+<div class="letter-card">
+    <div class="row-header">
+        <div class="from-block">
+            <label>From</label>
+            <p class="result-name" id="from"></p>
+        </div>
+        <div class="to-block">
+            <label>To</label>
+            <p><strong>The Teacher,</strong></p>
+            <p class="result-name" id="to"></p>
+        </div>
+    </div>
+    <p><strong>Subject:</strong> Order for 200 Copies of Science</p><br>
+    <p>Respected Sir/Madam,</p><br>
+    <div class="body-text"><p>As per our discussions on ___(meeting date), we are happy to place an order for 200 copies of the Science book by ____(writer) for Class IX for the ICSE Board on the following terms and conditions:<br><br>1. The price of each book will be Rs ___ (inclusive of all taxes)<br>2. Shipment will be made within 7 days from the order date.<br>3. Order not delivered as per the above conditions, the order stands cancelled.<br><br>Please find attached cheque number ____ dated ___ for Rs ____ towards advance for the order.</p></div>
+    <br>
+    <p>Thanking you,</p><br>
+    <p>With Regards,</p><br>
+    <p>_(Your Name)</p>
+</div>
+<script>
+    document.getElementById("from").innerText = localStorage.getItem("from") || "";
+    document.getElementById("to").innerText = localStorage.getItem("to") || "";
+</script>
+</body>
+</html>
